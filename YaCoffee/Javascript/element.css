@@ -1,0 +1,255 @@
+@import "http://fonts.googleapis.com/css?family=Raleway";
+/*----------------------------------------------
+CSS settings for HTML div Exact Center
+------------------------------------------------*/
+#abc {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+img#close {
+position:absolute;
+right:-14px;
+top:-14px;
+cursor:pointer
+}
+div#popupContact {
+position:absolute;
+left:20%;
+top:5%;
+right: 20%;
+bottom: 5%;
+font-family:'Raleway',sans-serif
+}
+form {
+padding:10px 50px;
+border:2px solid gray;
+border-radius:10px;
+font-family:raleway;
+background-color:#fff
+}
+h2 {
+background-color:#fff;
+padding:20px 25px;
+margin:-10px 10px;
+text-align:center;
+border-radius:10px 10px 0 0
+}
+hr {
+margin:-10px -50px;
+border:0;
+border-top:1px solid #ccc
+}
+input[type=text] {
+width:100%;
+padding:10px;
+margin-top:10px;
+border:1px solid #ccc;
+padding-left:20px;
+font-size:16px;
+font-family:raleway
+}
+input[type=date] {
+width:25%;
+padding:10px;
+margin-top:10px;
+border:1px solid #ccc;
+padding-left:20px;
+font-size:16px;
+text-align:center;
+font-family:raleway
+}
+input[type=time] {
+width:15%;
+padding:10px;
+margin-top:10px;
+border:1px solid #ccc;
+padding-left:20px;
+text-align:center;
+font-size:16px;
+font-family:raleway
+}
+#name {
+background-image:url(../images/name.jpg);
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+#email {
+background-image:url(../images/email.png);
+background-repeat:no-repeat;
+background-position:5px 7px
+}
+textarea {
+background-image:url(../images/msg.png);
+background-repeat:no-repeat;
+background-position:5px 7px;
+width:100%;
+height:95px;
+padding:10px;
+resize:none;
+margin-top:10px;
+border:1px solid #ccc;
+padding-left:20px;
+font-size:16px;
+font-family:raleway;
+margin-bottom:10px
+}
+#send {
+text-decoration:none;
+width:20%;
+text-align:center;
+display:block;
+background-color:#000;
+color:#fff;
+border:1px solid #000;
+padding:10px 0;
+font-size:20px;
+cursor:pointer;
+border-radius:5px
+}
+span {
+color:red;
+font-weight:700
+}
+button {
+width:10%;
+height:45px;
+border-radius:3px;
+background-color:#000;
+color:#fff;
+font-family:'Raleway',sans-serif;
+font-size:18px;
+cursor:pointer;
+text-align:center
+}
+
+.left-sidebar {
+	border: 1px solid #ccc;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.left-sidebar a {
+	display: block;
+	background: #ff634d;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.left-sidebar .search-box {
+	margin-top: 50px;
+	position: relative;
+}
+
+.left-sidebar .search-box input {
+	padding-left: 20px;
+}
+
+.left-sidebar .search-box span {
+	position: absolute;
+	top: 10px;
+	left: 5px;
+	color: #666;
+}
+
+.left-sidebar input[type="submit"] {
+	width: 100%;
+	margin-top: 50px;
+	border: none;
+	padding: 10px 20px;
+	display: block;
+	background: #BCF1ED;
+}
+
+.main-map {
+	height: 440px;
+}
+
+.right-sidebar p {
+	text-align: center;
+}
+
+.slider {
+	margin-top: 30px;
+	border: 1px solid #ccc;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.slider .swiper-container .swiper-wrapper img {
+	width: 240px;
+	height: 170px;
+}
+
+.rad,
+.ckb{
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.rad > input,
+.ckb > input{ /* HIDE ORG RADIO & CHECKBOX */
+  visibility: hidden;
+  position: absolute;
+}
+/* RADIO & CHECKBOX STYLES */
+.rad > i,
+.ckb > i{     /* DEFAULT <i> STYLE */
+  display: inline-block;
+  vertical-align: middle;
+  width:  16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.2s;
+  box-shadow: inset 0 0 0 8px #fff;
+  border: 1px solid gray;
+  background: gray;
+}
+/* CHECKBOX OVERWRITE STYLES */
+.ckb > i {
+  width: 25px;
+  border-radius: 3px;
+}
+.rad:hover > i{ /* HOVER <i> STYLE */
+  box-shadow: inset 0 0 0 3px #fff;
+  background: gray;
+}
+.rad > input:checked + i{ /* (RADIO CHECKED) <i> STYLE */
+  box-shadow: inset 0 0 0 3px #fff;
+  background: orange;
+}
+/* CHECKBOX */
+.ckb > input + i:after{
+  content: "";
+  display: block;
+  height: 12px;
+  width:  12px;
+  margin: 2px;
+  border-radius: inherit;
+  transition: inherit;
+  background: gray;
+}
+.ckb > input:checked + i:after{ /* (RADIO CHECKED) <i> STYLE */
+  margin-left: 11px;
+  background:  orange;
+}
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:4px solid #992600;
+}

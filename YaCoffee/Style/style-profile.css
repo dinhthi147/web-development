@@ -1,0 +1,20 @@
+.middle{
+	border: 2px solid #72c02c;
+	border-radius: 5px;
+	margin-top: 40px;
+}
+table td{
+	padding: 5px 20px;
+}
+.title-head{
+	text-align: center;
+}
+.title{
+	font-weight: bold;
+}
+.middle input{
+	border: 1px solid #72c02c;
+	border-radius: 5px;
+	padding: 5px;
+	min-width: 300px;
+}

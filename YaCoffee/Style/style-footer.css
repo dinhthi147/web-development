@@ -1,0 +1,69 @@
+/* Footer Design */
+.footer h3{
+	padding-bottom: 10px;
+	border-bottom: 3px solid #72c02c;
+}
+.footer{
+	text-align: center;
+	background-color: #222;
+	padding: 20px 0px;
+}
+
+.footer .description{
+	background-color: #222;
+	color: #fff;
+}
+.footer .description p{
+	text-align: justify;
+	color: #fff;
+	margin: 5px 40px;
+
+}
+.footer .copyright{
+	background-color: #222;
+	color: #fff;
+}
+.footer .location{
+	background-color: #222;
+	color: #fff;
+}
+.footer .copyright #location-footer{
+	margin-top: 60px;
+}
+.footer .contact{
+	background-color: #222;
+	color: #fff;
+}
+.footer .contact img{
+	width: 40px;
+	height: 40px;
+	margin: 30px 10px;
+
+}
+
+.copyright hr {
+		background-color: #72c02c;
+}
+/*==========None Mobile First Method ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.footer h3{
+		border: none;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

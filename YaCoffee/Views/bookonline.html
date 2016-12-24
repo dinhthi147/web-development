@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Book Online</title>
+    <meta charset="utf-8">
+    <script src="bookonline.js"></script>
+    <link href="album.css" rel="stylesheet">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="style-header.css">
+  	<link rel="stylesheet" type="text/css" href="style-footer.css">
+  	<link rel="stylesheet" type="text/css" href="element.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.jquery.min.js"></script>
+  	<script type="text/javascript" src="jquery.min.js"></script>
+  	<script type="text/javascript" src="bootstrap.min.js"></script>
+    <!-- Demo styles -->
+
+</head>
+
+<body>
+  <div class="container">
+  <div class="row">
+    <div class="top-header col-md-12 col-xs-12">
+      <div class="title col-md-6 col-xs-12">
+        <a href="/">
+          <img src="image/logo/logo-web.png" alt="notfound">
+        </a>
+      </div>
+      <div class="abc col-md-3 col-xs-12">
+      <a href="/login">
+      <div class="login col-md-12 col-xs-12">
+          <img id="login-img" src="image/icon/login-btn.png" alt="notfound">
+      </div>
+      </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ul class="topnav" id="myTopnav">
+  <li><a class="active" href="/">Trang chủ</a></li>
+  <li><a href="promotion.html">Khuyến mãi</a></li>
+  <li><a href="bookonline.html">Đặt chỗ</a></li>
+  <li><a href="buyonline.html">Mua online</a></li>
+  <li><a href="/location/location.html">Bản đồ</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+
+  <div class="album text-muted">
+        <div class="container">
+          <div class="row" id="branch"></div>
+        </div>
+      </div>
+
+      <div class="footer col-md-12" >
+      	<div class="description col-md-4">
+      		<h3>Về chúng tôi</h3>
+      		<p>
+      			YaCoffee chúng tôi là một chuỗi các quán cà phê trên nhiều quận huyện thành phố Hồ Chí Minh. Chúng tôi luôn tự hào là thương hiệu được người đam mê thưởng thức cà phê bình chọn và yêu thích. Chúng tôi luôn phục vụ khách hàng với phương châm khách hàng là thượng đế.
+      		</p>
+      	</div>
+      	<div class="location col-md-4">
+      		<h3>Địa chỉ</h3>
+      		<p id="location-footer">Chi nhánh 1: 58, Thành Thái, Q10, HCM</p>
+      		<p id="location-footer">Chi nhánh 2: 58, Thành Thái, Q10, HCM</p>
+      		<p id="location-footer">Chi nhánh 3: 58, Thành Thái, Q10, HCM</p>
+      		<p id="location-footer">Chi nhánh 4: 58, Thành Thái, Q10, HCM</p>
+      	</div>
+      	<div class="contact col-md-4">
+      		<h3>Liên hệ</h3>
+      		<a href="http://facebook.com"><img src="image/icon/facebook-icon.png" alt="facebook"></a>
+      		<a href="#"><img src="image/icon/google-icon.png" alt="google"></a>
+      		<a href="#"><img src="image/icon/instagram-icon.png" alt="instagram"></a>
+      	</div>
+      	<div class="copyright col-md-12">
+      		<p>Copyright&copy;YaCoffee.com</p>
+      	</div>
+      </div>
+
+    <div id="abc" style="overflow:hidden;">
+    <!-- Popup Div Starts Here -->
+    <div id="popupContact">
+    <!-- Contact Us Form -->
+    <form id="form" name="form">
+    <img id="close" src="close.png" width="3%" height="3%" onclick ="div_hide()">
+    <h2>Contact Us</h2>
+    <hr>
+      <div class="col-sm-12 slider">
+  			<!-- Swiper -->
+        <p id = "msg">Choose seating place</p>
+  		    <div class="swiper-container">
+  		        <div class="swiper-wrapper" id="tables">
+  		        </div>
+  		    </div>
+  		</div>
+    <div align="center">
+      <input id="name" name="name" placeholder="Name" type="text"></br>
+      <input id="phone" name="phone" placeholder="Phone" type="text"></br>
+      Date:&nbsp;&nbsp;<input id="date" name="date" placeholder="Date" type="date">
+      &nbsp;-&nbsp;&nbsp;Start Time:&nbsp;&nbsp;<input id="stime" name="time" placeholder="Time" type="time">
+      &nbsp;-&nbsp;&nbsp;End Time:&nbsp;&nbsp;<input id="etime" name="time" placeholder="Time" type="time">
+      <textarea id="msg" name="message" placeholder="Message"></textarea>
+    </div>
+    <button id="send" onclick="BookTable()">Send</button>
+    </form>
+    </div>
+    <!-- Popup Div Ends Here -->
+    </div>
+    <!-- Display Popup Button -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.jquery.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+body{
+	position: relative;
+}
+.title{
+	text-align: center;
+}
+.search-login{
+	padding: 0px;
+	margin: 0px;
+}
+.search-login img{
+	height: 36px;
+	width: 36px;
+	
+}
+.search{
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	
+}
+.search:hover{
+	background-color: #ececec;
+}
+.login{
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	border-right: 1px solid #72c02c;
+}
+.login:hover{
+	background-color: #ececec;
+}
+
+/*navbar design*/
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+
+
+/* Carousel */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+}
+
+/* Footer Design */
+.footer h3{
+  padding-bottom: 10px;
+  border-bottom: 3px solid #c0392b;
+}
+.footer{
+  text-align: center;
+  background-color: #222;
+  padding: 20px 0px;
+}
+
+.footer .description{
+  background-color: #222;
+  color: #fff;
+}
+.footer .description p{
+  text-align: justify;
+  color: #fff;
+  margin: 5px 40px;
+  
+}
+.footer .copyright{
+  background-color: #222;
+  color: #fff;
+}
+.footer .location{
+  background-color: #222;
+  color: #fff;
+}
+.footer .copyright #location-footer{
+  margin-top: 60px;
+}
+.footer .contact{
+  background-color: #222;
+  color: #fff;
+}
+.footer .contact img{
+  width: 40px;
+  height: 40px;
+  margin: 30px 10px;
+
+}
+/*==========None Mobile First Method ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.search{
+		height: 46px;
+		line-height: 46px;
+		border-top: 1px solid #72c02c;
+	}
+	.login{
+		height: 46px;
+		line-height: 46px;
+		border-top: 1px solid #72c02c;
+	}
+  .footer h3{
+    border: none;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	ul.topnav li:not(:first-child) {display: none;}
+  	ul.topnav li.icon {
+    	float: right;
+    	display: inline-block;
+  	}
+  	ul.topnav.responsive {position: relative;}
+  	ul.topnav.responsive li.icon {
+   		position: absolute;
+    	right: 0;
+    	top: 0;
+  	}
+  	ul.topnav.responsive li {
+    	float: none;
+    	display: inline;
+  	}
+  	ul.topnav.responsive li a {
+    	display: block;
+    	text-align: left;
+  	}
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+	
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YaCoffee</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style-header.css">
+  <link rel="stylesheet" type="text/css" href="style-footer.css">
+  <link rel="stylesheet" type="text/css" href="style-login-register.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap.min.js"></script>
+
+  <script src="register.js"></script>
+</head>
+<body>
+<!-- // header design // -->
+<div class="container">
+  <div class="row">
+    <div class="top-header col-md-12 col-xs-12">
+      <div class="title col-md-6 col-xs-12">
+        <a href="/">
+          <img src="image/logo/logo-web.png" alt="notfound">
+        </a>
+      </div>
+      <div class="search-login col-md-6 col-xs-12">
+        <div class="login col-md-6 col-xs-6">
+          <a href="/login">
+            <img src="image/icon/login-btn.png" alt="notfound">
+          </a>
+        </div>
+        <div class="search col-md-6 col-xs-6">
+          <img src="image/icon/search-btn.png" alt="notfound">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ul class="topnav" id="myTopnav">
+  <li><a class="active" href="#">Trang chủ</a></li>
+  <li><a href="#">Giới thiệu</a></li>
+  <li><a href="#">Đặt chỗ</a></li>
+  <li><a href="#">Mua online</a></li>
+  <li><a href="#">Bản đồ</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+
+<!-- </div>
+
+  <div>Username</label>
+  <input type="text" placeholder="Enter Username" id="username" required>
+
+  <label><b>Password</b></label>
+  <input type="password" placeholder="Enter Password" id="password" required>
+
+  <label><b>Re-entered Password</b></label>
+  <input type="password" placeholder="Enter Re-entered Password" id="repassword" required>
+
+  <label><b>Name</b></label>
+  <input type="text" placeholder="Enter your name" id="name" required>
+
+  <button onclick="register()">Register</button>
+  <input type="checkbox" checked="checked"> Remember me</div>
+
+<div class="container" style="background-color:#f1f1f1">
+  <button type="button" class="cancelbtn">Cancel</button>
+</div> -->
+
+<!-- // register form design // -->
+
+<div class="container register-form">
+    <div class="col-sm-3"></div>
+  <div class="myborder col-sm-6">
+    <h2 style="text-align: center;">Đăng kí tài khoản</h2>
+    <form method="post" action="#" name="myForm" onsubmit="return validateForm();">
+
+    <div class="input-group margin-bottom-20">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user mycolor"></i></span>
+      <input name="username" id="username" type="text" size="60" maxlength="255" class="form-control" placeholder="Chọn tên đăng nhập" onblur="lose_focus_username(this)" onfocus = "my_focus(this)" required>
+    </div>
+
+    <div class="input-group margin-bottom-20">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user mycolor"></i></span>
+      <input name="nickname" id="name" type="text" size="60" maxlength="255" class="form-control" placeholder="Chọn tên hiển thị" onblur="lose_focus_username(this)" onfocus = "my_focus(this)" required>
+    </div>
+
+    <div class="input-group margin-bottom-20">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-envelope mycolor"></i></span>
+      <input name="email" id="email" type="email" size="60" maxlength="255" class="form-control" placeholder="Địa chỉ email của bạn" onblur="lose_focus_email(this)" onfocus = "my_focus(this)" required>
+    </div>
+
+    <div class="input-group margin-bottom-20">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-phone mycolor"></i></span>
+      <input name="phone" id="phone" type="text" size="60" maxlength="255" class="form-control" placeholder="Số điện thoại của bạn" onblur="lose_focus_email(this)" onfocus = "my_focus(this)" required>
+    </div>
+
+    <div class="input-group margin-bottom-20">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock mycolor"></i></span>
+      <input name="password" id="password" type="password" size="60" maxlength="255" class="form-control" placeholder="Tạo một mật khẩu" onblur="lose_focus_password(this)" onfocus = "my_focus(this)" required>
+    </div>
+
+    <div class="input-group margin-bottom-20">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock mycolor"></i></span>
+      <input name="repassword" id="repassword" type="password" size="60" maxlength="255" class="form-control" placeholder="Xác nhận mật khẩu" onblur="lose_focus_confirmpassword(this)" onfocus = "my_focus(this)" required>
+    </div>
+
+    <div class="center">
+      <button class="btn-u" type="button" onclick="register()">Đăng kí</button>
+    </div>
+    </form>
+  </div>
+  <div class="col-sm-3"></div>
+</div>
+
+<!-- // footer design // -->
+<div class="footer col-md-12" >
+  <div class="description col-md-4">
+    <h3>Về chúng tôi</h3>
+    <p>
+      YaCoffee chúng tôi là một chuỗi các quán cà phê trên nhiều quận huyện thành phố Hồ Chí Minh. Chúng tôi luôn tự hào là thương hiệu được người đam mê thưởng thức cà phê bình chọn và yêu thích. Chúng tôi luôn phục vụ khách hàng với phương châm khách hàng là thượng đế.
+    </p>
+  </div>
+  <div class="location col-md-4">
+    <h3>Địa chỉ</h3>
+    <p id="location-footer">Chi nhánh 1: 58, Thành Thái, Q10, HCM</p>
+    <p id="location-footer">Chi nhánh 2: 58, Thành Thái, Q10, HCM</p>
+    <p id="location-footer">Chi nhánh 3: 58, Thành Thái, Q10, HCM</p>
+    <p id="location-footer">Chi nhánh 4: 58, Thành Thái, Q10, HCM</p>
+  </div>
+  <div class="contact col-md-4">
+    <h3>Liên hệ</h3>
+    <a href="http://facebook.com"><img src="image/icon/facebook-icon.png" alt="facebook"></a>
+    <a href="#"><img src="image/icon/google-icon.png" alt="google"></a>
+    <a href="#"><img src="image/icon/instagram-icon.png" alt="instagram"></a>
+  </div>
+  <div class="copyright col-md-12">
+    <p>Copyright&copy;YaCoffee.com</p>
+  </div>
+</div>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>

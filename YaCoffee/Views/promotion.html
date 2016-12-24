@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>YaCoffee</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style-header.css">
+	<link rel="stylesheet" type="text/css" href="style-footer.css">
+
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="top-header col-md-12 col-xs-12">
+			<div class="title col-md-6 col-xs-12">
+				<a href="/">
+				  <img src="image/logo/logo-web.png" alt="notfound">
+			  </a>
+			</div>
+			<div class="search-login col-md-6 col-xs-12">
+				<div class="login col-md-6 col-xs-6">
+					<a href="/login">
+					  <img src="image/icon/login-btn.png" alt="notfound">
+				  </a>
+				</div>
+				<div class="search col-md-6 col-xs-6">
+					<img src="image/icon/search-btn.png" alt="notfound">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<ul class="topnav" id="myTopnav">
+  <li><a class="active" href="/">Trang chủ</a></li>
+  <li><a href="promotion.html">Khuyến mãi</a></li>
+  <li><a href="bookonline.html">Đặt chỗ</a></li>
+  <li><a href="buyonline.html">Mua online</a></li>
+  <li><a href="/location/location.html">Bản đồ</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<div class="footer col-md-12" >
+	<div class="description col-md-4">
+		<h3>Về chúng tôi</h3>
+		<p>
+			YaCoffee chúng tôi là một chuỗi các quán cà phê trên nhiều quận huyện thành phố Hồ Chí Minh. Chúng tôi luôn tự hào là thương hiệu được người đam mê thưởng thức cà phê bình chọn và yêu thích. Chúng tôi luôn phục vụ khách hàng với phương châm khách hàng là thượng đế.
+		</p>
+	</div>
+	<div class="location col-md-4">
+		<h3>Địa chỉ</h3>
+		<p id="location-footer">Chi nhánh 1: 58, Thành Thái, Q10, HCM</p>
+		<p id="location-footer">Chi nhánh 2: 58, Thành Thái, Q10, HCM</p>
+		<p id="location-footer">Chi nhánh 3: 58, Thành Thái, Q10, HCM</p>
+		<p id="location-footer">Chi nhánh 4: 58, Thành Thái, Q10, HCM</p>
+	</div>
+	<div class="contact col-md-4">
+		<h3>Liên hệ</h3>
+		<a href="http://facebook.com"><img src="image/icon/facebook-icon.png" alt="facebook"></a>
+		<a href="#"><img src="image/icon/google-icon.png" alt="google"></a>
+		<a href="#"><img src="image/icon/instagram-icon.png" alt="instagram"></a>
+	</div>
+	<div class="copyright col-md-12">
+		<p>Copyright&copy;YaCoffee.com</p>
+	</div>
+</div>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>
